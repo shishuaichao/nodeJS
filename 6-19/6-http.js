@@ -13,3 +13,11 @@ console.log('Server is running at http://127.0.0.1:3000')
 // url
 var url = require('url')
 console.log(url.parse('http://user:pass@host.com:8080/path/to/file?query=string#hash'))
+
+// path
+var path = require('path')
+var workDir = path.resolve('.')
+console.log(workDir)
+var filePath = path.join(workDir,'pub','index.html')
+console.log(filePath)
+

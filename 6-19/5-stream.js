@@ -25,7 +25,7 @@ ws2.write(new Buffer('使用Stream写入二进制数据...\n', 'utf-8'));
 ws2.write(new Buffer('END.', 'utf-8'));
 ws2.end();
 
-// pipe
+// pipe  流导向，导向流
 var rs = fs.createReadStream('sample.txt');
 var ws = fs.createWriteStream('copied.txt');
 rs.pipe(ws);  // 实际上是一个复制操作
